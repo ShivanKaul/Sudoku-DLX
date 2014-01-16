@@ -17,8 +17,11 @@ SUDOKU APPLICATION
 For Sudoku, there are 4 constraints. 
 
 1) Only 1 instance of a number can be in a row
+
 2) Only 1 instance of a number can be in a column
+
 3) Only 1 instance of a number can be in a block
+
 4) There can be only one number in a cell
 
 The rows represent every single possible position for every number. Every row would have 4 1s, representing one possible place for the number (satisfying all 4 constraints). To implement my solution, I created a class AlgorithmXSolver that contained all the methods and the data structures required to solve the problem. I instantiated an instance of this class in the solve() method, and then ran it. I had to convert the given Grid into a sparse matrix, accounting for the given clues (filled in values). Then, this matrix is converted into a linked list as talked about above and solved using the Dancing Links approach. We store possible solutions in an ArrayList 'solution'. Once we get a set of Nodes that solves the problem, we take the solution list and iterate over every single Node and map the solution over the original Grid. 
@@ -28,6 +31,7 @@ TESTING
 I tested my solver using the puzzles provided by Prof Blanchette (http://www.cs.mcgill.ca/~blanchem/250/hw5/sudoku.html) by passing the sudoku text file as the args[] variable of the main method. I did this in Eclipse by editing the Run Configuration (and providing the full path to the text file in the Arguments tab).
 
 CREDITS
+
 (1) Dr Donald Knuth's original paper (http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/0011047.pdf) on Dancing Links
 (2) Jonathan Chu's paper for the pseudocode for the Dancing Links implementation (http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/sudoku.paper.html)  
 (3) The Wikipedia pages on Dancing Links, Exact Cover problem, Algorithm X for helping to understand Knuth's paper  
