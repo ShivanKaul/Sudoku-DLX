@@ -1,6 +1,13 @@
+INTRODUCTION
+
+For my Algorithms 1 course in Fall 2013, the final project was a choice between building a web search engine and a Sudoku solver. Our prof told us that for the search engine he would give us a bunch of guidelines and classes to start us off, but wouldn't give us anything for the Sudoku problem -- it was billed as the more 'open ended' and 'challenging' of the two.
+Being a slave of my inner masochist, I decided that I had to do the Sudoku Solver, and started reading online about Sudoku solving. I read that no less than Dr Donald Knuth had thought and written about this, and he had described an algorithm to solve a Sudoku puzzle -- Algorithm X+Dancing Links. He being a personal hero of mine (and a demi-god in general), I decided I would take a shot at using his technique to write a Sudoku Solver in Java. And thus an assigment that should have taken a week to do ended up swallowing the better part of a month as I struggled with understanding Knuth's paper, and then implementing a Solver in Java. I believe my Algorithm X  implementation is one of the few ones in Java (at least, I couldn't find anything online).
+
+Anyway, here goes.
+
 ALGORITHM X, EXACT COVER PROBLEM AND DANCING LINKS IMPLEMENTATION
 
-My class AlgorithmXSolver takes an unsolved Sudoku puzzled as int[][] (the Grid) and outputs the solved Sudoku puzzle. I convert the Sudoku puzzle into an Exact Cover problem, solve that using the Dancing Links algorithm as described by Dr Donald Knuth, and then get the solution and map it onto the Grid.
+My class AlgorithmXSolver takes an unsolved Sudoku puzzle as an int[][] (the Grid) and outputs the solved Sudoku puzzle. I convert the Sudoku puzzle into an Exact Cover problem, solve that using the Dancing Links algorithm as described by Dr Donald Knuth, and then get the solution and map it onto the Grid.
 
 EXACT COVER AND DANCING LINKS 
 
