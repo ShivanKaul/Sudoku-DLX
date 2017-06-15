@@ -1,3 +1,5 @@
+Caveat Emptor: written by (then) 1st year Computer Science student. 
+
 ### Introduction
 
 For my Algorithms 1 course in Fall 2013, the final project was a choice between building a web search engine and a Sudoku solver. Our prof told us that for the search engine he would give us a bunch of guidelines and classes to start us off, but wouldn't give us anything for the Sudoku problem -- it was billed as the more 'open ended' and 'challenging' of the two.
@@ -37,7 +39,7 @@ The rows represent every single possible position for every number. Every row wo
 
 I tested my solver using the puzzles provided by Prof Blanchette (http://www.cs.mcgill.ca/~blanchem/250/hw5/sudoku.html).
 
-### Credits
+### References
 
 (1) Dr Donald Knuth's original paper (http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/0011047.pdf) on Dancing Links
 (2) Jonathan Chu's paper for the pseudocode for the Dancing Links implementation (http://www.ocf.berkeley.edu/~jchu/publicportal/sudoku/sudoku.paper.html)  
