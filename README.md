@@ -1,4 +1,6 @@
-Caveat Emptor: written by (then) 1st year Computer Science student. 
+**Caveat Emptor:** written by (then) 1st year Computer Science student. 
+
+**Bonus:** written by (then) 1st year Computer Science student, so features endearingly exhaustive comments.
 
 ### Introduction
 
