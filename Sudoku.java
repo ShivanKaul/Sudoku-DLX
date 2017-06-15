@@ -1,5 +1,4 @@
 // Shivan Kaul Sahib
-// 260512593
 
 import java.util.*;
 import java.io.*;
