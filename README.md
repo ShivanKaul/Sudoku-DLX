@@ -1,17 +1,6 @@
-**Caveat Emptor:** written by (then) 1st year Computer Science student. 
-
-**Bonus:** written by (then) 1st year Computer Science student, so features endearingly exhaustive comments.
-
-### Introduction
-
-For my Algorithms 1 course in Fall 2013, the final project was a choice between building a web search engine and a Sudoku solver. Our prof told us that for the search engine he would give us a bunch of guidelines and classes to start us off, but wouldn't give us anything for the Sudoku problem -- it was billed as the more 'open ended' and 'challenging' of the two.
-Being a slave of my inner masochist, I decided that I had to do the Sudoku Solver, and started reading online about Sudoku solving. I read that no less than Dr Donald Knuth had thought and written about this, and he had described an algorithm to solve a Sudoku puzzle -- Algorithm X+Dancing Links. He being a personal hero of mine (and a demi-god in general), I decided I would take a shot at using his technique to write a Sudoku Solver in Java. And thus an assigment that should have taken a week to do ended up swallowing the better part of a month as I struggled with understanding Knuth's paper, and then implementing a Solver in Java. I believe my Algorithm X implementation is one of the few ones in Java (at least, I couldn't find anything online).
-
-Anyway, here goes.
-
 ### Algorithm X, Exact Cover Problem And Dancing Links Implementation
 
-My class AlgorithmXSolver takes an unsolved Sudoku puzzle as an int[][] (the Grid) and outputs the solved Sudoku puzzle. I convert the Sudoku puzzle into an Exact Cover problem, solve that using the Dancing Links algorithm as described by Dr Donald Knuth, and then get the solution and map it onto the Grid.
+The class AlgorithmXSolver takes an unsolved Sudoku puzzle as an int[][] (the Grid) and outputs the solved Sudoku puzzle. We convert the Sudoku puzzle into an Exact Cover problem, solve that using the Dancing Links algorithm as described by Knuth, and then get the solution and map it onto the Grid.
 
 ### Exact Cover And Dancing Links 
 
@@ -36,10 +25,6 @@ For Sudoku, there are 4 constraints.
 4) There can be only one number in a cell
 
 The rows represent every single possible position for every number. Every row would have 4 1s, representing one possible place for the number (satisfying all 4 constraints). To implement my solution, I created a class AlgorithmXSolver that contained all the methods and the data structures required to solve the problem. I instantiated an instance of this class in the solve() method, and then ran it. I had to convert the given Grid into a sparse matrix, accounting for the given clues (filled in values). Then, this matrix is converted into a linked list as talked about above and solved using the Dancing Links approach. We store possible solutions in an ArrayList 'solution'. Once we get a set of Nodes that solves the problem, we take the solution list and iterate over every single Node and map the solution over the original Grid. 
-
-### Testing
-
-I tested my solver using the puzzles provided by Prof Blanchette (http://www.cs.mcgill.ca/~blanchem/250/hw5/sudoku.html).
 
 ### References
 
